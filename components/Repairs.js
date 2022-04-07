@@ -15,13 +15,30 @@ const ComponentContainer = styled.div`
   width: 70%;
   background-color: purple;
   border-bottom: 1px solid black;
+  display: flex;
+  flex-direction: row;
+`;
+
+const Left = styled.div`
+  height: 600px;
+  width: 50%;
+  background-color: white;
+`;
+
+const Right = styled.div`
+  height: 600px;
+  width: 50%;
+  background-color: purple;
 `;
 
 const Repairs = () => {
   return (
     <>
       <Container>
-        <ComponentContainer></ComponentContainer>
+        <ComponentContainer>
+          <Left></Left>
+          <Right></Right>
+        </ComponentContainer>
       </Container>
     </>
   );

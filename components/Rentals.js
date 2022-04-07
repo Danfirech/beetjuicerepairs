@@ -17,11 +17,26 @@ const ComponentContainer = styled.div`
   border-bottom: 1px solid black;
 `;
 
+const Left = styled.div`
+  height: 600px;
+  width: 50%;
+  background-color: white;
+`;
+
+const Right = styled.div`
+  height: 600px;
+  width: 50%;
+  background-color: grey;
+`;
+
 const Rentals = () => {
   return (
     <>
       <Container>
-        <ComponentContainer></ComponentContainer>
+        <ComponentContainer>
+          <Left></Left>
+          <Right></Right>
+        </ComponentContainer>
       </Container>
     </>
   );
