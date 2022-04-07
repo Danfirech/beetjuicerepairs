@@ -33,7 +33,7 @@ const Top = styled.div`
 const Bottom = styled.div`
   height: 400px;
   width: 100%;
-  background-color: blue;
+  background-color: white;
   display: flex;
   justify-content: center;
   align-items: center;

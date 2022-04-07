@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Image from "next/image";
+import GuitarAmp from "../media/GuitarAmp.jpeg";
 
 const Container = styled.div`
   height: 600px;
@@ -14,7 +15,7 @@ const Container = styled.div`
 const ComponentContainer = styled.div`
   height: 600px;
   width: 70%;
-  background-color: orange;
+  background-color: white;
   border-bottom: 1px solid black;
   display: flex;
   flex-direction: row;
@@ -28,15 +29,17 @@ const Left = styled.div`
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  border-bottom: 1px solid black;
 `;
 
 const Right = styled.div`
   height: 600px;
   width: 50%;
-  background-color: orange;
+  background-color: white;
   display: flex;
   align-items: center;
   justify-content: center;
+  border-bottom: 1px solid black;
 `;
 
 const Top = styled.div`
@@ -48,6 +51,7 @@ const Top = styled.div`
   flex-direction: column;
   padding-right: 70px;
   padding-left: 70px;
+  padding-top: 70px;
 `;
 const Bottom = styled.div`
   height: 50%;
@@ -58,12 +62,13 @@ const Bottom = styled.div`
   flex-direction: column;
   padding-right: 70px;
   padding-left: 70px;
+  padding-bottom: 170px;
 `;
 
 const ImageBox = styled.div`
   height: 400px;
   width: 400px;
-  background-color: black;
+  background-color: white;
 `;
 
 const Sales = () => {
@@ -73,7 +78,7 @@ const Sales = () => {
         <ComponentContainer>
           <Left>
             <Top>
-              <h1>Repairs</h1>
+              <h1>Sales</h1>
               <h2>
                 Our Guitar Techs can set up and fix your guitars blah blah blah
               </h2>
@@ -83,7 +88,17 @@ const Sales = () => {
             </Bottom>
           </Left>
           <Right>
-            <ImageBox></ImageBox>
+            <ImageBox>
+              {" "}
+              <Image
+                src={GuitarAmp}
+                layout="intrinsic"
+                width={400}
+                height={350}
+                priority
+                alt="Logo"
+              />
+            </ImageBox>
           </Right>
         </ComponentContainer>
       </Container>
