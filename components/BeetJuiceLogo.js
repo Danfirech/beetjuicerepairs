@@ -13,19 +13,31 @@ const Container = styled.div`
 const ComponentContainer = styled.div`
   height: 600px;
   width: 70%;
-  background-color: blue;
+  background-color: white;
   border-bottom: 1px solid black;
+  display: flex;
+  flex-direction: column;
 `;
 
 const Top = styled.div`
-  height: ;
+  height: 200px;
+  width: 100%;
+  background color: black;
+`;
+const Bottom = styled.div`
+  height: 400px;
+  width: 100%;
+  background-color: blue;
 `;
 
 const BeetJuiceLogo = () => {
   return (
     <>
       <Container>
-        <ComponentContainer></ComponentContainer>
+        <ComponentContainer>
+          <Top></Top>
+          <Bottom></Bottom>
+        </ComponentContainer>
       </Container>
     </>
   );
