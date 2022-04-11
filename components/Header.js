@@ -29,7 +29,7 @@ const Header = () => {
       <Container>
         <ComponentContainer>
           <Link
-            href="/"
+            href="/repairs"
             passHref
             onClick={() => setShowNav(!showNav)}
             role="button"
