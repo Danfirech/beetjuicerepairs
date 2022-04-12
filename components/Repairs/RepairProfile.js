@@ -2,32 +2,28 @@ import React from "react";
 import styled from "styled-components";
 import Image from "next/image";
 import logo from "../../media/Logo.png";
-import { useState } from "react";
-
-function EzraServiceMenu() {
-  const [toggle, setToggele] = useState(true);
-}
 
 const Container = styled.div`
   height: 2200px;
-  width: 100vw;
-  background-color: pink;
+  width: 100%;
+  background-color: white;
   display: flex;
   flex-direction: column;
 `;
 
 const Banner = styled.div`
   height: 200px;
-  width: 100vw;
-  background-color: white;
+  width: 100%;
+  background-color: #a4613a;
   display: flex;
   align-items: center;
   justify-content: center;
 `;
 
 const Top = styled.div`
-  height: 800px;
-  width: 100vw;
+  height: 40%;
+  width: 100%;
+  background-color: #eee3b7;
 `;
 
 const TopTop = styled.div`
@@ -54,30 +50,35 @@ const TopBottom = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding-bottom: 100px;
 `;
 
 const Middle = styled.div`
-  height: 600px;
+  height: 40%;
   width: 100vw;
-  background-color: white;
+  background-color: #a4613a;
   display: flex;
+  padding-right: 400px;
+  padding-left: 400px;
 `;
 
 const MiddleLeft = styled.div`
   height: 100%;
-  width: 40%;
+  width: 30%;
   display: flex;
-  flex-direction: Column;
+  flex-direction: column;
+  background-color: #a4613a;
   align-items: center;
   justify-content: center;
+  padding-left: 40px;
+  padding-right: 40px;
 `;
 
 const MiddleRight = styled.div`
   height: 100%;
-  width: 60%;
-  background-color: white;
-  padding-left: 200px;
-  padding-right: 200px;
+  width: 70%;
+
+  background-color: #a4613a;
   display: flex;
 `;
 
@@ -93,6 +94,7 @@ const ServicesLeft = styled.div`
 const ServicesRight = styled.div`
   height: 100%;
   width: 50%;
+  display: flex;
   flex-direction: column;
   justify-content: space-between;
   padding-top: 100px;
@@ -107,19 +109,39 @@ const ServiceBox = styled.div`
 
 const ServiceBoxRight = styled.div`
   height: 60px;
-  width: 70%;
+  width: 80%;
   background-color: red;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
 `;
 
 const ServiceBoxLeft = styled.div`
   height: 60px;
-  width: 30%;
+  width: 20%;
   background-color: purple;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;
 
 const Bottom = styled.div`
-  height: 600px;
+  height: 20%;
   width: 100vw;
+  display: flex;
+  background-color: #eee3b7;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+`;
+
+const Button = styled.button`
+  color: palevioletred;
+  font-size: 1em;
+  margin: 1em;
+  padding: 0.25em 1em;
+  border: 2px solid palevioletred;
+  border-radius: 3px;
 `;
 
 const EzraPage = () => {
@@ -135,11 +157,11 @@ const EzraPage = () => {
             priority
             alt="Logo"
           />
+          <h1>B33t Ju1c3 Guitar Repair and Service</h1>
         </Banner>
         <Top>
           <TopTop>
-            <h1>B33t Ju1c3 Guitar Repair and Service</h1>
-            <TopPic></TopPic>
+            <TopPic />
           </TopTop>
           <TopBottom>
             <h1>Lead Guitar Tech: Ezra Bogmas</h1>
@@ -166,25 +188,47 @@ const EzraPage = () => {
             <ServicesLeft>
               <ServiceBox>
                 <ServiceBoxLeft></ServiceBoxLeft>
-                <ServiceBoxRight></ServiceBoxRight>
+                <ServiceBoxRight>Intonation</ServiceBoxRight>
               </ServiceBox>
               <ServiceBox>
                 <ServiceBoxLeft></ServiceBoxLeft>
-                <ServiceBoxRight></ServiceBoxRight>
+                <ServiceBoxRight>Nut Replacment/Modification</ServiceBoxRight>
               </ServiceBox>
               <ServiceBox>
                 <ServiceBoxLeft></ServiceBoxLeft>
-                <ServiceBoxRight></ServiceBoxRight>
+                <ServiceBoxRight>Electric Work and Sodering</ServiceBoxRight>
               </ServiceBox>
               <ServiceBox>
                 <ServiceBoxLeft></ServiceBoxLeft>
-                <ServiceBoxRight></ServiceBoxRight>
+                <ServiceBoxRight>Truss Rod Adjustment</ServiceBoxRight>
               </ServiceBox>
             </ServicesLeft>
-            <ServicesRight></ServicesRight>
+            <ServicesRight>
+              <ServiceBox>
+                <ServiceBoxLeft></ServiceBoxLeft>
+                <ServiceBoxRight>
+                  Hardware Replacment/Modification
+                </ServiceBoxRight>
+              </ServiceBox>
+              <ServiceBox>
+                <ServiceBoxLeft></ServiceBoxLeft>
+                <ServiceBoxRight>Consultations</ServiceBoxRight>
+              </ServiceBox>
+              <ServiceBox>
+                <ServiceBoxLeft></ServiceBoxLeft>
+                <ServiceBoxRight>Relic Work/Fret Polishing</ServiceBoxRight>
+              </ServiceBox>
+              <ServiceBox>
+                <ServiceBoxLeft></ServiceBoxLeft>
+                <ServiceBoxRight>Edge Filing</ServiceBoxRight>
+              </ServiceBox>
+            </ServicesRight>
           </MiddleRight>
         </Middle>
-        <Bottom></Bottom>
+        <Bottom>
+          <h1>Pricing</h1>
+          <Button>Contact for a free quote</Button>
+        </Bottom>
       </Container>
     </>
   );

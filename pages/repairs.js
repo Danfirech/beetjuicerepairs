@@ -5,8 +5,9 @@ import EzraPage from "../components/Repairs/RepairProfile";
 export default function Home() {
   return (
     <div>
+      {/* <Header/> */}
       <EzraPage />
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }
