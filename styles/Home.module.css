@@ -1,3 +1,11 @@
+@font-face {
+  font-family: 'PPTelegraf-Regular';
+  src: url('/fonts/PPTelegraf-Regular.otf') format('otf');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
 .container {
   padding: 0 2rem;
 }

@@ -1,7 +1,7 @@
-import React from "react";
-import styled from "styled-components";
-import Image from "next/image";
-import logo from "../../media/Logo.png";
+import React from 'react';
+import styled from 'styled-components';
+import Image from 'next/image';
+import logo from '../../media/logo1.jpeg';
 
 const Container = styled.div`
   height: 2200px;
@@ -18,6 +18,9 @@ const Banner = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  h1 {
+    font-family: 'Nunito';
+  }
 `;
 
 const Top = styled.div`
@@ -167,7 +170,7 @@ const EzraPage = () => {
             <h1>Lead Guitar Tech: Ezra Bogmas</h1>
             <h3>
               Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
+              industry. Lorem Ipsum has been the industry standard dummy text
               ever since the 1500s, when an unknown printer took a galley of
               type and scrambled it to make a type specimen book. It has
               survived not only five centuries, but also the leap into
