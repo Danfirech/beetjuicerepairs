@@ -2,6 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 import Image from 'next/image';
 import logo from '../../media/logo1.jpeg';
+// import ScrollAnimation from 'react-animate-on-scroll';
+// import '../../pages/_document';
 
 const Container = styled.div`
   height: 2200px;
@@ -9,24 +11,20 @@ const Container = styled.div`
   background-color: white;
   display: flex;
   flex-direction: column;
+  background-color: #fffdf4;
 `;
 
 const Banner = styled.div`
   height: 200px;
   width: 100%;
-  background-color: #a4613a;
   display: flex;
   align-items: center;
   justify-content: center;
-  h1 {
-    font-family: 'Nunito';
-  }
 `;
 
 const Top = styled.div`
   height: 40%;
   width: 100%;
-  background-color: #eee3b7;
 `;
 
 const TopTop = styled.div`
@@ -54,12 +52,14 @@ const TopBottom = styled.div`
   align-items: center;
   justify-content: center;
   padding-bottom: 100px;
+  font-family: 'Nunito';
 `;
 
 const Middle = styled.div`
   height: 40%;
-  width: 100vw;
-  background-color: #a4613a;
+  width: 80vw;
+  border-radius: 30px;
+  background-color: #eee3b7;
   display: flex;
   padding-right: 400px;
   padding-left: 400px;
@@ -70,7 +70,6 @@ const MiddleLeft = styled.div`
   width: 30%;
   display: flex;
   flex-direction: column;
-  background-color: #a4613a;
   align-items: center;
   justify-content: center;
   padding-left: 40px;
@@ -80,8 +79,6 @@ const MiddleLeft = styled.div`
 const MiddleRight = styled.div`
   height: 100%;
   width: 70%;
-
-  background-color: #a4613a;
   display: flex;
 `;
 
@@ -115,7 +112,6 @@ const ServiceBoxRight = styled.div`
   width: 80%;
   background-color: red;
   display: flex;
-  /* justify-content: center; */
   align-items: center;
 `;
 
@@ -132,7 +128,6 @@ const Bottom = styled.div`
   height: 20%;
   width: 100vw;
   display: flex;
-  background-color: #eee3b7;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -182,6 +177,7 @@ const EzraPage = () => {
             </h3>
           </TopBottom>
         </Top>
+
         <Middle>
           <MiddleLeft>
             <h1>Services</h1>
