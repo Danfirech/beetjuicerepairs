@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import Image from 'next/image';
 import logo from '../../media/logo1.jpeg';
 // import ScrollAnimation from 'react-animate-on-scroll';
-// import '../../pages/_document';
+import '../../pages/_document';
 
 const Container = styled.div`
   height: 2200px;
@@ -56,9 +56,9 @@ const TopBottom = styled.div`
 `;
 
 const Middle = styled.div`
-  height: 40%;
+  height: 30%;
   width: 80vw;
-  border-radius: 30px;
+  border-radius: 0 30px 30px 0;
   background-color: #eee3b7;
   display: flex;
   padding-right: 400px;
