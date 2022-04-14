@@ -3,7 +3,6 @@ import styled from 'styled-components';
 import Image from 'next/image';
 import logo from '../../media/logo1.jpeg';
 // import ScrollAnimation from 'react-animate-on-scroll';
-import '../../pages/_document';
 
 const Container = styled.div`
   height: 2200px;
