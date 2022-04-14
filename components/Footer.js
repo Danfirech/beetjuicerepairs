@@ -1,5 +1,12 @@
 import React from "react";
 import styled from "styled-components";
+import Insta from "../media/insta.png";
+import FB from "../media/Facebook.jpeg";
+import Image from "next/image";
+
+const InstgramLink = (e) => {
+  window.location = "https://www.instagram.com/b33tju1c3/?hl=en";
+};
 
 const Container = styled.div`
   height: 200px;
@@ -23,7 +30,8 @@ const Left = styled.div`
   background-color: white;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  justify-content: center;
+  /* align-items: center; */
 `;
 
 const Middle = styled.div`
@@ -31,17 +39,20 @@ const Middle = styled.div`
   width: 33.3%;
   background-color: white;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
+  justify-content: center;
 `;
 
 const Right = styled.div`
   height: 200px;
   width: 33.3%;
+  padding-left: 200px;
   display: flex;
   background-color: white;
   flex-direction: column;
-  align-items: center;
+  justify-content: center;
+  /* align-items: center; */
 `;
 
 const Footer = () => {
@@ -50,13 +61,30 @@ const Footer = () => {
       <Container>
         <ComponentContainer>
           <Left>
-            <h4>Thing 1</h4>
-            <h4>Thing 1</h4>
-            <h4>Thing 1</h4>
+            <h4>Copyright 2022 B33t Ju1c3 Entertainment</h4>
+            <h4>B33t Ju1c3 Entertainnment</h4>
           </Left>
           <Middle>
-            <h4>Social Media 1</h4>
-            <h4>Social Media 1</h4>
+            <div onClick={InstgramLink}>
+              <Image
+                src={Insta}
+                layout="intrinsic"
+                width={35}
+                height={35}
+                priority
+                alt="Insta"
+              />
+            </div>
+            <div>
+              <Image
+                src={FB}
+                layout="intrinsic"
+                width={35}
+                height={35}
+                priority
+                alt="Facebook"
+              />
+            </div>
           </Middle>
           <Right>
             <h4>B33t Ju1cs Enterntainment</h4>
