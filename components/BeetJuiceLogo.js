@@ -19,6 +19,9 @@ const ComponentContainer = styled.div`
   border-bottom: 1px solid black;
   display: flex;
   flex-direction: column;
+  @media (max-width: 768px) {
+    height: 500px;
+  }
 `;
 
 const Top = styled.div`
@@ -29,7 +32,12 @@ const Top = styled.div`
   justify-content: center;
   align-items: center;
   font-size: 30px;
+  @media (max-width: 768px) {
+      font-size: 15px;
+      height: 100px;
+  }
 `;
+
 const Bottom = styled.div`
   height: 400px;
   width: 100%;
@@ -37,6 +45,9 @@ const Bottom = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  @media (max-width: 768px) {
+    height: 400px;
+  }
 `;
 
 const BeetJuiceLogo = () => {

@@ -21,6 +21,11 @@ const ComponentContainer = styled.div`
   justify-content: space-between;
   padding-right: 400px;
   padding-left: 400px;
+  @media (max-width: 768px) {
+    align-items: center;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
 `;
 
 const Header = () => {

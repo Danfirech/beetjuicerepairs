@@ -15,6 +15,9 @@ const Container = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  @media (max-width: 768px) {
+    height: 700px;
+  }
 `;
 
 const ComponentContainer = styled.div`
@@ -22,6 +25,11 @@ const ComponentContainer = styled.div`
   width: 70%;
   background-color: white;
   display: flex;
+  @media (max-width: 768px) {
+    flex-direction: column;
+    width: 90%;
+    height: 700px;
+  }
 `;
 
 const Left = styled.div`
@@ -31,7 +39,9 @@ const Left = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* align-items: center; */
+  @media (max-width: 768px) {
+    align-items: center;
+  }
 `;
 
 const Middle = styled.div`
@@ -42,6 +52,9 @@ const Middle = styled.div`
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  @media (max-width: 768px) {
+    align-items: center;
+  }
 `;
 
 const Right = styled.div`
@@ -52,7 +65,10 @@ const Right = styled.div`
   background-color: white;
   flex-direction: column;
   justify-content: center;
-  /* align-items: center; */
+  @media (max-width: 768px) {
+    align-items: center;
+    padding-left: 0px;
+  }
 `;
 
 const Footer = () => {
