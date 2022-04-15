@@ -7,7 +7,6 @@ import logo from '../../media/logo1.jpeg';
 const Container = styled.div`
   height: 2200px;
   width: 100%;
-  background-color: white;
   display: flex;
   flex-direction: column;
   background-color: #fffdf4;
@@ -58,7 +57,13 @@ const Middle = styled.div`
   height: 30%;
   width: 80vw;
   border-radius: 0 30px 30px 0;
-  background-color: #eee3b7;
+  background: rgb(180, 111, 71);
+  background: linear-gradient(
+    180deg,
+    rgba(180, 111, 71, 1) 0%,
+    rgba(197, 156, 127, 1) 35%,
+    rgba(255, 253, 244, 1) 100%
+  );
   display: flex;
   padding-right: 400px;
   padding-left: 400px;
@@ -72,7 +77,7 @@ const MiddleLeft = styled.div`
   align-items: center;
   justify-content: center;
   padding-left: 40px;
-  padding-right: 40px;
+  padding-right: 100px;
 `;
 
 const MiddleRight = styled.div`
@@ -109,7 +114,7 @@ const ServiceBox = styled.div`
 const ServiceBoxRight = styled.div`
   height: 60px;
   width: 80%;
-  background-color: red;
+  background-color: #c59c7f;
   display: flex;
   align-items: center;
 `;
@@ -135,10 +140,20 @@ const Bottom = styled.div`
 const Button = styled.button`
   color: palevioletred;
   font-size: 1em;
+  width: 250px;
+  height: 60px;
   margin: 1em;
   padding: 0.25em 1em;
-  border: 2px solid palevioletred;
-  border-radius: 3px;
+  border: 2px #c59c7f;
+  border-radius: 10px;
+  background-color: #c59c7f;
+  color: white;
+  cursor: pointer;
+  :hover {
+    background-color: #e5e4e2;
+    color: black;
+    border: 2px solid #e5e4e2;
+  }
 `;
 
 const EzraPage = () => {
