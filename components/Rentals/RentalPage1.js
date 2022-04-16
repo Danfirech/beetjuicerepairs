@@ -1,6 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import Image from "next/image";
+import { useRouter } from "next/router";
+import Link from "next/link";
 
 const Container = styled.div`
   height: 1000px;
@@ -36,7 +38,12 @@ const RentalPage1 = () => {
           DIY packages provide you with the needed instructions and guidence to
           set up and run your own audio equiptment!
         </h1>
-        <button>PACKAGES</button>
+        <div>
+          <h3>Get Started</h3>
+          <Link href="/rentalPage2">
+            <button>Packages</button>
+          </Link>
+        </div>
       </Top>
       <Bottom></Bottom>
     </>
