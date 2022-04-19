@@ -1,17 +1,8 @@
-import React from "react";
-import styled from "styled-components";
-import Image from "next/image";
-import { useRouter } from "next/router";
-import Link from "next/link";
-import RentalPage2 from "./RentalPage2";
-
-const HandleClick = (props) => {
-  return (
-    <>
-      <RentalPage2 />
-    </>
-  );
-};
+import React from 'react';
+import styled from 'styled-components';
+import Image from 'next/image';
+import Link from 'next/link';
+import RentalPage2 from '../../pages/rentalpage2';
 
 const Container = styled.div`
   height: 1000px;
@@ -57,7 +48,6 @@ const BottomRight = styled.div`
 `;
 
 const RentalPage1 = () => {
-  const router = useRouter();
   return (
     <>
       <Top>
@@ -69,8 +59,16 @@ const RentalPage1 = () => {
           set up and run your own audio equiptment!
         </h1>
         <div>
-          <h3>Get Started</h3>
-          <button onClick={() => router.push("/RentalPage2")}>Packages</button>
+          <Link
+            href="/rentalpage2"
+            passHref
+            onClick={() => setShowNav(!showNav)}
+            role="button"
+            onKeyDown={() => setShowNav(!showNav)}
+            tabIndex={0}
+          >
+            Get Started!
+          </Link>
         </div>
       </Top>
       <Bottom>
