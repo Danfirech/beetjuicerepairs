@@ -3,6 +3,15 @@ import styled from "styled-components";
 import Image from "next/image";
 import { useRouter } from "next/router";
 import Link from "next/link";
+import RentalPage2 from "./RentalPage2";
+
+const HandleClick = (props) => {
+  return (
+    <>
+      <RentalPage2 />
+    </>
+  );
+};
 
 const Container = styled.div`
   height: 1000px;
@@ -24,10 +33,31 @@ const Top = styled.div`
 const Bottom = styled.div`
   height: 500px;
   width: 100vw;
-  background-color: pink;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+`;
+
+const BottomLeft = styled.div`
+  height: 500px;
+  width: 33.33vw;
+  background-color: red;
+`;
+
+const BottomMiddle = styled.div`
+  height: 500px;
+  width: 33.33vw;
+  background-color: white;
+`;
+
+const BottomRight = styled.div`
+  height: 500px;
+  width: 33.33vw;
+  background-color: red;
 `;
 
 const RentalPage1 = () => {
+  const router = useRouter();
   return (
     <>
       <Top>
@@ -40,12 +70,14 @@ const RentalPage1 = () => {
         </h1>
         <div>
           <h3>Get Started</h3>
-          <Link href="/rentalPage2">
-            <button>Packages</button>
-          </Link>
+          <button onClick={() => router.push("/RentalPage2")}>Packages</button>
         </div>
       </Top>
-      <Bottom></Bottom>
+      <Bottom>
+        <BottomLeft></BottomLeft>
+        <BottomMiddle></BottomMiddle>
+        <BottomRight></BottomRight>
+      </Bottom>
     </>
   );
 };
