@@ -44,7 +44,7 @@ const Header = () => {
             Repairs
           </Link>
           <Link
-            href="/rentals"
+            href="rentalPages/rentals"
             passHref
             onClick={() => setShowNav(!showNav)}
             role="button"

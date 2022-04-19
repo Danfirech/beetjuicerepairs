@@ -1,8 +1,9 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
 // import Image from 'next/image';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
+import Header from "../../components/Header";
+import Footer from "../../components/Footer";
+import Link from "next/link";
 
 const Container = styled.div`
   height: 1000px;
@@ -30,10 +31,10 @@ const Bottom = styled.div`
 const RentalPage2 = () => {
   return (
     <>
-      <Header />
+      <Header></Header>
       <Top></Top>
       <Bottom></Bottom>
-      <Footer />
+      <Footer></Footer>
     </>
   );
 };

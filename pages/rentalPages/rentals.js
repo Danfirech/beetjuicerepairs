@@ -1,8 +1,7 @@
-import React from 'react';
-import styled from 'styled-components';
-import Image from 'next/image';
-import Link from 'next/link';
-import RentalPage2 from '../../pages/rentalpage2';
+import React from "react";
+import styled from "styled-components";
+import Image from "next/image";
+import Link from "next/link";
 
 const Container = styled.div`
   height: 1000px;
@@ -47,7 +46,7 @@ const BottomRight = styled.div`
   background-color: red;
 `;
 
-const RentalPage1 = () => {
+const Rental = () => {
   return (
     <>
       <Top>
@@ -60,7 +59,7 @@ const RentalPage1 = () => {
         </h1>
         <div>
           <Link
-            href="/rentalpage2"
+            href="/rentalPages/rentalpage2"
             passHref
             onClick={() => setShowNav(!showNav)}
             role="button"
@@ -80,4 +79,4 @@ const RentalPage1 = () => {
   );
 };
 
-export default RentalPage1;
+export default Rental;
