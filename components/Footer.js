@@ -9,7 +9,7 @@ const InstgramLink = (e) => {
 };
 
 const Container = styled.div`
-  height: 200px;
+  height: 100px;
   width: 100%;
   background-color: white;
   display: flex;
@@ -21,7 +21,7 @@ const Container = styled.div`
 `;
 
 const ComponentContainer = styled.div`
-  height: 200px;
+  height: 100px;
   width: 70%;
   background-color: white;
   display: flex;
@@ -33,7 +33,7 @@ const ComponentContainer = styled.div`
 `;
 
 const Left = styled.div`
-  height: 200px;
+  height: 100px;
   width: 33.3%;
   background-color: white;
   display: flex;
@@ -45,20 +45,21 @@ const Left = styled.div`
 `;
 
 const Middle = styled.div`
-  height: 200px;
+  height: 100px;
   width: 33.3%;
   background-color: white;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
+
   @media (max-width: 768px) {
     align-items: center;
   }
 `;
 
 const Right = styled.div`
-  height: 200px;
+  height: 100px;
   width: 33.3%;
   padding-left: 200px;
   display: flex;

@@ -2,6 +2,8 @@ import React from "react";
 import styled from "styled-components";
 import Image from "next/image";
 import Link from "next/link";
+import Header from "../../components/Header";
+import Footer from "../../components/Footer";
 
 const Container = styled.div`
   height: 1000px;
@@ -49,6 +51,7 @@ const BottomRight = styled.div`
 const Rental = () => {
   return (
     <>
+      <Header></Header>
       <Top>
         <h1>
           Beet Juice Rentals provides an easy DIY rental experience from start
@@ -75,6 +78,7 @@ const Rental = () => {
         <BottomMiddle></BottomMiddle>
         <BottomRight></BottomRight>
       </Bottom>
+      <Footer></Footer>
     </>
   );
 };

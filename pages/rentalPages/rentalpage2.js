@@ -11,15 +11,23 @@ const Container = styled.div`
 `;
 
 const Top = styled.div`
-  height: 500px;
+  height: 1000px;
   width: 100vw;
   background-color: blue;
   display: flex;
-  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
   align-items: center;
-  flex-direction: column;
+
   padding-right: 200px;
   padding-left: 200px;
+`;
+
+const PackageBox = styled.div`
+  height: 400px;
+  width: 300px;
+  background-color: white;
 `;
 
 const Bottom = styled.div`
@@ -32,7 +40,24 @@ const RentalPage2 = () => {
   return (
     <>
       <Header></Header>
-      <Top></Top>
+      <Top>
+        <PackageBox>
+          <Link
+            href="/rentalPages/package1"
+            passHref
+            onClick={() => setShowNav(!showNav)}
+            role="button"
+            onKeyDown={() => setShowNav(!showNav)}
+            tabIndex={0}
+          >
+            Package 1
+          </Link>
+        </PackageBox>
+        <PackageBox></PackageBox>
+        <PackageBox></PackageBox>
+        <PackageBox></PackageBox>
+        <PackageBox></PackageBox>
+      </Top>
       <Bottom></Bottom>
       <Footer></Footer>
     </>
