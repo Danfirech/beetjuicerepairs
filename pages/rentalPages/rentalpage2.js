@@ -25,9 +25,21 @@ const Top = styled.div`
 `;
 
 const PackageBox = styled.div`
-  height: 400px;
-  width: 300px;
+  height: 450px;
+  width: 330px;
   background-color: white;
+`;
+
+const PackageBoxTop = styled.div`
+  height: 70%;
+  width: 100%;
+  background-color: grey;
+`;
+
+const PackageBoxBottom = styled.div`
+  height: 30%;
+  width: 100%;
+  background-color: pink;
 `;
 
 const Bottom = styled.div`
@@ -42,18 +54,27 @@ const RentalPage2 = () => {
       <Header></Header>
       <Top>
         <PackageBox>
-          <Link
-            href="/rentalPages/package1"
-            passHref
-            onClick={() => setShowNav(!showNav)}
-            role="button"
-            onKeyDown={() => setShowNav(!showNav)}
-            tabIndex={0}
-          >
-            Package 1
-          </Link>
+          <PackageBoxTop></PackageBoxTop>
+          <PackageBoxBottom>
+            <h2>Package 1</h2>
+            <button>
+              <Link
+                href="/rentalPages/package1"
+                passHref
+                onClick={() => setShowNav(!showNav)}
+                role="button"
+                onKeyDown={() => setShowNav(!showNav)}
+                tabIndex={0}
+              >
+                Package 1
+              </Link>
+            </button>
+          </PackageBoxBottom>
         </PackageBox>
-        <PackageBox></PackageBox>
+        <PackageBox>
+          <PackageBoxTop></PackageBoxTop>
+          <PackageBoxBottom></PackageBoxBottom>
+        </PackageBox>
         <PackageBox></PackageBox>
         <PackageBox></PackageBox>
         <PackageBox></PackageBox>

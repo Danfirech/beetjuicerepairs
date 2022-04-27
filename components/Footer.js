@@ -52,7 +52,6 @@ const Middle = styled.div`
   flex-direction: row;
   align-items: center;
   justify-content: center;
-
   @media (max-width: 768px) {
     align-items: center;
   }
