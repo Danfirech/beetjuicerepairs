@@ -13,13 +13,13 @@ const Container = styled.div`
 const Top = styled.div`
   height: 500px;
   width: 100vw;
-  background-color: blue;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   padding-right: 200px;
   padding-left: 200px;
+  background-color: white;
 `;
 
 const Bottom = styled.div`
@@ -34,18 +34,30 @@ const BottomLeft = styled.div`
   height: 500px;
   width: 33.33vw;
   background-color: red;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 `;
 
 const BottomMiddle = styled.div`
   height: 500px;
   width: 33.33vw;
   background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 `;
 
 const BottomRight = styled.div`
   height: 500px;
   width: 33.33vw;
   background-color: red;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 `;
 
 const Rental = () => {
@@ -74,9 +86,19 @@ const Rental = () => {
         </div>
       </Top>
       <Bottom>
-        <BottomLeft></BottomLeft>
-        <BottomMiddle></BottomMiddle>
-        <BottomRight></BottomRight>
+        <BottomLeft>
+          <h1>About</h1>
+          <h3>Button To About</h3>
+        </BottomLeft>
+        <BottomMiddle>
+          <h1>Set Up Instructions</h1>
+          <h3>Find your systems detailed set up instrctions here.</h3>
+          <h1>Button to Instructions</h1>
+        </BottomMiddle>
+        <BottomRight>
+          <h1>Location: Nashville, TN</h1>
+          <h1>Contact: 616-616-6166</h1>
+        </BottomRight>
       </Bottom>
       <Footer></Footer>
     </>
